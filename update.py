@@ -5,9 +5,10 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def delayed_print(message):
-    time.sleep(0.5)
-    clear_screen()
     print(message)
+    time.sleep(3)
+    clear_screen()
+    
 
 def collect_user_info():
     user_info = {}
